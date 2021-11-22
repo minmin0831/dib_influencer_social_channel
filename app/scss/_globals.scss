@@ -90,6 +90,14 @@ a, a:visited, a:hover {
     }
 }
 
+.item_box {
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: 2px solid $grayishPink;
+    border-radius: 5px;
+}
+
 .button_filled_med {
     display: inline-block;
     position: relative;
@@ -101,12 +109,13 @@ a, a:visited, a:hover {
     color: $lightGray;
     font-weight: 400;
     text-align: center;
-    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
     white-space: nowrap;
 
     &:hover {
-        color: $black;
-        background-color: $grayishBlue;
+        color: $grayishPink;
+        background-color: transparent;
+        border-color: $grayishPink;
     }
 }
 
@@ -121,12 +130,13 @@ a, a:visited, a:hover {
     color: $lightGray;
     font-weight: 400;
     text-align: center;
-    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
     white-space: nowrap;
 
     &:hover {
-        color: $black;
-        background-color: $grayishBlue;
+        color: $grayishPink;
+        background-color: transparent;
+        border-color: $grayishPink;
     }
 }
 
@@ -140,12 +150,13 @@ a, a:visited, a:hover {
     color: $grayishPink;
     font-weight: 400;
     text-align: center;
-    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
     white-space: nowrap;
 
     &:hover {
-        color: $black;
-        background-color: $grayishBlue;
+        color: $white;
+        background-color: $grayishPink;
+        border-color: $grayishPink;
     }
 }
 
@@ -159,12 +170,13 @@ a, a:visited, a:hover {
     color: $grayishPink;
     font-weight: 400;
     text-align: center;
-    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
     white-space: nowrap;
 
     &:hover {
-        color: $black;
-        background-color: $grayishBlue;
+        color: $white;
+        background-color: $grayishPink;
+        border-color: $grayishPink;
     }
 }
 
@@ -179,12 +191,144 @@ a, a:visited, a:hover {
     font-weight: 400;
     text-align: center;
     background-color: $white;
-    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
     white-space: nowrap;
 
     &:hover {
         color: $white;
         background-color: $grayishPink;
+        border-color: $grayishPink;
+    }
+}
+
+
+.image_upload_button {
+    overflow: hidden;
+    width: 165px;
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    border: 1px solid $grayishPink;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $grayishPink;
+    font-weight: 400;
+    text-align: center;
+    transition: color 500ms ease-in-out, background-color 500ms ease-in-out, border-color 500ms ease-in-out;
+    white-space: nowrap;
+    
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: transparent;
+        opacity: 0;
+        width: 165px;
+        height: 39.8;
+        cursor: pointer;
+        border: 1px solid red;
     }
 
+    &:hover {
+        color: $white;
+        background-color: $grayishPink;
+        border-color: $grayishPink;
+    }
+}
+
+.image_upload_button_np {
+    overflow: hidden;
+    width: 165px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid $grayishPink;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $grayishPink;
+    font-weight: 400;
+    text-align: center;
+    transition: color 500ms ease-in-out, background-color 500ms ease-in-out, border-color 500ms ease-in-out;
+    white-space: nowrap;
+    
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: transparent;
+        opacity: 0;
+        width: 165px;
+        height: 39.8;
+        cursor: pointer;
+        border: 1px solid red;
+    }
+
+    &:hover {
+        color: $white;
+        background-color: $grayishPink;
+        border-color: $grayishPink;
+    }
+}
+
+.setting_change_button {
+    display: inline-block;
+    position: relative;
+    padding: 0.2rem 1rem;
+    border: 1px solid $grayishPink;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $grayishPink;
+    font-size: 0.5rem;
+    font-weight: 400;
+    text-align: center;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
+    white-space: nowrap;
+
+    &:hover {
+        color: $white;
+        background-color: $grayishPink;
+        border-color: $grayishPink;
+    }
+}
+
+.search_button {
+    display: inline-block;
+    position: relative;
+    padding: 0.2rem 1rem;
+    border: 1px solid $grayishPink;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $grayishPink;
+    font-size: 0.5rem;
+    font-weight: 400;
+    text-align: center;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, border-color 500ms ease-in-out;
+    white-space: nowrap;
+
+    &:hover {
+        color: $white;
+        background-color: $grayishPink;
+        border-color: $grayishPink;
+    }
+}
+
+.text_button_sm {
+    color: $grayishPink;
+    transition: color 300ms ease-in-out;
+
+        &:hover {
+            color: $grayishBlue;
+        }
+}
+
+.text_input {
+    margin-bottom: 20px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid $grayishPink;
+
+    &:focus {
+        outline: none;
+        color: $grayishPink;
+        line-height: 1.5;
+    }
 }

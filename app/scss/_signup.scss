@@ -39,17 +39,6 @@
                 label {
                     margin-bottom: 10px;
                 }
-
-                input {
-                    margin-bottom: 20px;
-                    width: 100%;
-                    border: none;
-                    border-bottom: 1px solid $grayishPink;
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
             }
         }
 
@@ -59,11 +48,12 @@
 
             .terms,
             .newsletter {
-                color: $grayishBlue;
+                color: $grayishPink;
                 transition: color 300ms ease-in-out;
 
-                &:hover {
-                    color: $grayishPink;
+                &:hover,
+                :active {
+                    color: $grayishBlue;
                 }
             }
 
@@ -77,7 +67,8 @@
                 font-weight: 600;
                 transition: color 300ms ease-in-out;
     
-                &:hover {
+                &:hover,
+                :active {
                     color: $grayishBlue;
                 }
             }

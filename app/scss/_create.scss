@@ -1,0 +1,105 @@
+.create {
+    background-color: $white;
+    padding: 0;
+    margin: 0;
+
+    &__container {
+        width: 600px;
+        height: 1200px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        
+        &__name {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            margin-bottom: 20px;
+
+            .name_text {
+                font-size: 1.25rem;
+                
+            }
+
+            .channel_name {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+
+        &__image {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+            height: 250px;
+            
+
+            .image_text {
+                position: absolute;
+                font-size: 1.25rem;
+                height: 250px;
+                line-height: 250px;
+            }
+
+            .image_container {
+                position: absolute;
+                top: 0;
+                right: 0;
+                flex-direction: column;
+                height: 250px;
+
+                img {
+                    width: 200px;
+                    border-radius: 50%;
+                }
+
+                .upload_button {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+    
+                    input {
+                        
+                    }
+                }
+            }
+        }
+
+        &__invite {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+
+        &__cohosts {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+
+        &__interests {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+
+        &__policy {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+
+        &__save {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+        
+    }
+}
