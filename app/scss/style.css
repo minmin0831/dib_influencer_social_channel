@@ -4,7 +4,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -12,14 +14,16 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   color: #C17BDA;
   line-height: 1.3;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 0;
   font-weight: 300;
   line-height: 1.15;
@@ -31,7 +35,9 @@ h1 {
   margin-bottom: 1.5625rem;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   text-decoration: none;
 }
 
@@ -334,6 +340,20 @@ a, a:visited, a:hover {
 
 .text_button_sm:hover {
   color: #7fbedb;
+}
+
+.text_button_sm_bg {
+  color: #C17BDA;
+  padding: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.text_button_sm_bg:hover {
+  color: #7fbedb;
+  background-color: #C17BDA;
+  border-color: #C17BDA;
 }
 
 .text_input {
@@ -1407,13 +1427,59 @@ a, a:visited, a:hover {
   height: 45px;
   line-height: 45px;
   margin-bottom: 20px;
+  font-size: 1.25rem;
 }
 
 .create__container__cohosts {
   width: 100%;
-  height: 45px;
-  line-height: 45px;
+  height: 200px;
   margin-bottom: 20px;
+}
+
+.create__container__cohosts .invited_text {
+  font-size: 1.25rem;
+  height: 200px;
+  line-height: 200px;
+}
+
+.create__container__cohosts .grid {
+  width: 150px;
+  height: 100%;
+}
+
+.create__container__cohosts .grid .cohost_image {
+  position: relative;
+  width: 140px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #C17BDA;
+  border-radius: 5px;
+  background-image: url(/images/snoopdog.jpeg);
+}
+
+.create__container__cohosts .grid .cohost_image .cohost_name {
+  position: absolute;
+  overflow: hidden;
+  bottom: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.create__container__cohosts .grid .cohost_image .status {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+.create__container__cohosts .grid .cohost_image .status .pending {
+  margin: 2px;
+}
+
+.create__container__cohosts .grid .cohost_image .status .accepted {
+  margin: 2px;
 }
 
 .create__container__interests {
@@ -1423,6 +1489,10 @@ a, a:visited, a:hover {
   margin-bottom: 20px;
 }
 
+.create__container__interests .interests_text {
+  font-size: 1.25rem;
+}
+
 .create__container__policy {
   width: 100%;
   height: 45px;
@@ -1430,10 +1500,18 @@ a, a:visited, a:hover {
   margin-bottom: 20px;
 }
 
+.create__container__policy .text_button {
+  font-size: 1.25rem;
+}
+
 .create__container__save {
   width: 100%;
   height: 45px;
   line-height: 45px;
   margin-bottom: 20px;
+}
+
+.create__container__save .save {
+  font-size: 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */
