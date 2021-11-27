@@ -38,8 +38,8 @@
             </a>
             <div class="header__menu flex">
                 <a href="mypage.html">My Page</a>
-                <a href="#">Subscribes</a>
-                <a href="#">Trending</a>
+                <a href="subscribes.html">Subscribes</a>
+                <a href="trending.html">Trending</a>
                 <a href="create.html">Create Channel</a>
             </div>
         </nav>
@@ -52,10 +52,11 @@
                 <div class="image_container flex">
                     <img src="images/snoopdog.jpeg" alt="">
                     <div class="upload_button">
-                        <div class="image_upload_button">Upload image
-                            <!-- 이미지 업로드되면 버튼 텍스트는 Change image로 변경. -->
-                            <input id="image_upload" type="file" name="user_image" />
-                        </div>
+                        <form action="channel_image_upload.jsp" method="post" id="channelImageUpload" name="channelImageUpload">
+                            <button class="image_upload_button">Upload image
+                                <input id="image_upload" type="file" name="user_image" value="channelImageUpload"/>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -397,6 +398,7 @@
                 </div>
             </div>
         </div>
+        <div class="user__container4 flex flex-jc-c"></div>
     </section>
 
     <!-- Footer -->

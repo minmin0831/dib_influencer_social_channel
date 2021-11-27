@@ -65,6 +65,7 @@
                 h1 {
                     font-style: bold;
                     font-weight: 600;
+                    color: $grayishBlue;
                 }
             }
 
@@ -80,7 +81,7 @@
                 }
 
                 p {
-                    color: $black;
+                    color: $grayishBlue;
                     padding-right: 2rem;
                 }
 
@@ -106,7 +107,7 @@
                 }
 
                 p {
-                    color: $black;
+                    color: $grayishBlue;
                     padding-left: 2rem;
                 }
 
@@ -166,7 +167,7 @@
                 }
 
                 p {
-                    color: $black;
+                    color: $grayishBlue;
                     padding-left: 2rem;
                 }
 
@@ -226,7 +227,7 @@
                 }
 
                 p {
-                    color: $black;
+                    color: $grayishBlue;
                     padding-right: 2rem;
                 }
 
@@ -332,7 +333,7 @@
             max-width: 100%;
             position: relative;
             height: 340px;
-            background-color: $lightGray;
+            background-color: $brighterBlack;
 
             .title {
                 width: 100%;

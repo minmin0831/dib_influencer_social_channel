@@ -1,15 +1,17 @@
 .user {
-    background-color: $white;
     flex-direction: column;
     padding: 0;
     margin: 0;
 
     &__container {
         width: 900px;
-        height: 300px;
+        height: 350px;
         margin-top: 50px;
         margin-left: auto;
+        padding-top: 50px;
         margin-right: auto;
+        border-radius: 10px 10px 0 0;
+        background-color: $brighterBlack;
 
         &__image {
             width: 300px;
@@ -29,6 +31,7 @@
                 .upload_button {
                     // 버튼 위치만 정함. 버튼은 global에 있음. 
                     margin-top: 20px;
+                    overflow: hidden;
                 }
             }
         }
@@ -145,9 +148,9 @@
     &__container2 {
         width: 900px;
         min-height: 300px;
-        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
+        background-color: $brighterBlack;
 
         &__channel {
             width: 900px;
@@ -240,12 +243,11 @@
 
     &__container3 {
         width: 900px;
-        min-height: 300px;
+        height: 300px;
         top: 0;
-        margin-top: 50px;
         margin-right: auto;
-        margin-bottom: 150px;
         margin-left: auto;
+        background-color: $brighterBlack;
 
         &__subscribe {
             width: 425px;
@@ -336,5 +338,15 @@
                 }
             }
         }
+
+    }
+
+    &__container4 {
+        width: 900px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $brighterBlack;
+        border-radius: 0 0 10px 10px;
     }
 }

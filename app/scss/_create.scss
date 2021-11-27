@@ -1,11 +1,10 @@
 .create {
-  background-color: $white;
   padding: 0;
   margin: 0;
 
   &__container {
-    width: 600px;
-    height: 1200px;
+    width: 900px;
+    height: 1250px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -13,107 +12,164 @@
 
     &__name {
       width: 100%;
-      height: 45px;
-      line-height: 45px;
-      margin-bottom: 20px;
+      height: 90px;
+      line-height: 90px;
+      background-color: $brighterBlack;
+      border-radius: 10px 10px 0 0;
 
       .name_text {
         font-size: 1.25rem;
+        width: 150px;
+        margin-left: 90px;
       }
 
       .channel_name {
         font-size: 1rem;
         font-weight: 600;
+        margin-left: 20px;
       }
     }
 
     &__image {
       position: relative;
       width: 100%;
-      margin-bottom: 20px;
-      height: 250px;
+      height: 300px;
+      background-color: $brighterBlack;
 
       .image_text {
         position: absolute;
         font-size: 1.25rem;
-        height: 250px;
-        line-height: 250px;
+        height: 300px;
+        line-height: 300px;
+        width: 150px;
+        margin-left: 90px;
       }
 
       .image_container {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 25px;
+        left: 210px;
         flex-direction: column;
         height: 250px;
+        margin-left: 50px;
 
-        img {
+        .image {
           width: 200px;
+          height: 200px;
           border-radius: 50%;
+          background-image: url("/images/snoopdog.jpeg");
+          background-size: 200px;
+          background-repeat: no-repeat;
+          background-position: center;
         }
 
         .upload_button {
           position: absolute;
           bottom: 0;
-          right: 0;
-
-          input {
-          }
+          overflow: hidden;
         }
       }
     }
 
     &__invite {
       width: 100%;
-      height: 45px;
-      line-height: 45px;
-      margin-bottom: 20px;
+      height: 90px;
+      line-height: 90px;
       font-size: 1.25rem;
+      padding-left: 90px;
+      background-color: $brighterBlack;
     }
 
     &__cohosts {
       width: 100%;
-      height: 200px;
-      margin-bottom: 20px;
+      height: 250px;
+      background-color: $brighterBlack;
 
       .invited_text {
         font-size: 1.25rem;
-        height: 200px;
-        line-height: 200px;
+        width: 150px;
+        height: 250px;
+        line-height: 250px;
+        margin-left: 90px;
       }
 
-      .grid {
-        width: 150px;
-        height: 100%;
+      .grid_container {
+        position: relative;
+        width: 550px;
+        margin-left: 20px;
 
-        .cohost_image {
-          position: relative;
-          width: 140px;
-          flex-direction: column;
-          border: 1px solid $grayishPink;
-          border-radius: 5px;
-          background-image: url(/images/snoopdog.jpeg);
+        .grid {
+          position: absolute;
+          top: 25px;
+          width: 550px;
+          height: 200px;
+          
+          .cohost_image_container {
+            position: relative;
+            width: 170px;
+            height: 200px;
 
-          .cohost_name {
-            position: absolute;
-            overflow: hidden;
-            bottom: 20%;
-            width: 100%;
-            text-align: center;
-          }
+            .cohost_image {
+              position: relative;
+              width: 170px;
+              height: 200px;
+              flex-direction: column;
+              border: 1px solid $grayishPink;
+              border-radius: 5px;
+              background-image: url(/images/snoopdog.jpeg);
+              background-size: 200px;
+              background-repeat: no-repeat;
+              background-position: center;
+              transition: opacity 500ms ease-in-out;
 
-          .status {
-            position: absolute;
-            bottom: 5%;
-            width: 100%;
-            text-align: center;
-
-            .pending {
-              margin: 2px;
+              &:hover {
+                opacity: 0.7;
+              }
             }
 
-            .accepted {
-              margin: 2px;
+            .cohost_name {
+              position: absolute;
+              overflow: hidden;
+              bottom: 20%;
+              border-radius: 4px;
+              margin: 3px;
+              background-color: $black;
+              transition: background-color 500ms ease-in-out;
+              z-index: 10;
+
+              &:hover {
+                background-color: $grayishPink;
+                cursor: normal;
+              }
+            }
+
+            .status {
+              position: absolute;
+              bottom: 5%;
+              width: 100%;
+              text-align: center;
+  
+              .change {
+                border-radius: 4px;
+                margin: 2px;
+                background-color: $black;
+                transition: background-color 500ms ease-in-out;
+
+                &:hover {
+                  background-color: $grayishPink;
+                }
+              }
+  
+              .remove {
+                border-radius: 4px;
+                margin: 2px;
+                background-color: $black;
+                transition: background-color 500ms ease-in-out;
+
+                &:hover {
+                  background-color: $grayishPink;
+                }
+              }
             }
           }
         }
@@ -122,38 +178,77 @@
 
     &__interests {
       width: 100%;
-      height: 45px;
-      line-height: 45px;
-      margin-bottom: 20px;
+      height: 300px;
+      line-height: 300px;
+      background-color: $brighterBlack;
 
       .interests_text {
         font-size: 1.25rem;
+        width: 150px;
+        height: 300px;
+        margin-left: 90px;
       }
 
       .grid {
+        position: relative;
+        margin-left: 20px;
+        width: 550px;
+        height: 300px;
+
+        &_container {
+          position: absolute;
+          top: 15px;
+          flex-direction: column;
+
+          .interest_image {
+            height: 60px;
+            width: 550px;
+            border-radius: 5px;
+            border: 1px solid $grayishPink;
+            background-color: $grayishPink; // 이미지로 대체
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+  
+            h2 {
+                display: block;
+                margin: auto 0;
+                color: $white;
+            }
+          }
+  
+          .more {
+            height: 60px;
+            text-align: center;
+            
+            h2 {
+              height: 60px;
+              line-height: 60px;
+              font-size: 1rem;
+            }
+          }
+        }
       }
     }
 
     &__policy {
       width: 100%;
-      height: 45px;
-      line-height: 45px;
-      margin-bottom: 20px;
-
-      .text_button {
-        font-size: 1.25rem;
-      }
+      height: 90px;
+      line-height: 90px;
+      padding-left: 90px;
+      background-color: $brighterBlack;
+      font-size: 1.25rem;
     }
 
     &__save {
       width: 100%;
-      height: 45px;
-      line-height: 45px;
-      margin-bottom: 20px;
-
-      .save {
-        font-size: 1.25rem;
-      }
+      height: 90px;
+      line-height: 90px;
+      padding-left: 90px;
+      background-color: $brighterBlack;
+      font-size: 1.25rem;
+      border-radius: 0 0 5px 5px;
     }
   }
 }
