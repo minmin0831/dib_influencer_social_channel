@@ -2,257 +2,320 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
-    <title>dib - Influencer Social Channel - My Page</title>
-    <link rel="stylesheet" href="app/scss/style.css" type="text/css">
-    <script src="app\js\jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/1c2282b431.js" crossorigin="anonymous"></script>
-    <script src="app\js\create.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+  <title>dib - Influencer Social Channel - My Page</title>
+  <link rel="stylesheet" href="app/scss/style.css" type="text/css">
+  <script src="app\js\jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1c2282b431.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="container container--pall flex flex-jc-sb flex-ai-c">
-            <a href="index.html" class="header__logo">
-                <a href="#">
-                    <svg width="123" height="32" viewBox="-20 -3 123 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M44.013 25.1422C42.515 25.1422 41.1686 24.8009 39.9739 24.1182C38.7793 23.4166 37.8311 22.4684 37.1295 21.2738C36.4468 20.0791 36.1055 18.7233 36.1055 17.2062C36.1055 15.7081 36.4373 14.3618 37.101 13.1671C37.7837 11.9724 38.7034 11.0338 39.8601 10.3511C41.0169 9.64948 42.3253 9.29866 43.7855 9.29866C45.056 9.29866 46.2033 9.57363 47.2273 10.1236C48.2513 10.6545 49.0761 11.3656 49.7019 12.2569V3.89422C49.7019 3.55289 49.8062 3.2874 50.0148 3.09777C50.2234 2.88918 50.4889 2.78489 50.8113 2.78489C51.1336 2.78489 51.3991 2.88918 51.6077 3.09777C51.8163 3.2874 51.9206 3.55289 51.9206 3.89422V17.32C51.8827 18.7991 51.5129 20.136 50.8113 21.3307C50.1286 22.5064 49.1899 23.4356 47.9953 24.1182C46.8195 24.8009 45.4921 25.1422 44.013 25.1422ZM44.013 23.1511C45.1129 23.1511 46.0895 22.8951 46.9428 22.3831C47.8151 21.8521 48.4978 21.141 48.9908 20.2498C49.5028 19.3585 49.7588 18.344 49.7588 17.2062C49.7588 16.0874 49.5028 15.0824 48.9908 14.1911C48.4978 13.2809 47.8151 12.5698 46.9428 12.0578C46.0895 11.5458 45.1129 11.2898 44.013 11.2898C42.9321 11.2898 41.9555 11.5458 41.0833 12.0578C40.211 12.5698 39.5188 13.2809 39.0068 14.1911C38.4948 15.0824 38.2388 16.0874 38.2388 17.2062C38.2388 18.344 38.4948 19.3585 39.0068 20.2498C39.5188 21.141 40.211 21.8521 41.0833 22.3831C41.9555 22.8951 42.9321 23.1511 44.013 23.1511ZM58.1793 25C57.8379 25 57.563 24.9052 57.3544 24.7156C57.1647 24.507 57.0699 24.232 57.0699 23.8907V10.5502C57.0699 10.2089 57.1647 9.94341 57.3544 9.75378C57.563 9.54518 57.8379 9.44089 58.1793 9.44089C58.5016 9.44089 58.7576 9.54518 58.9473 9.75378C59.1558 9.94341 59.2601 10.2089 59.2601 10.5502V23.8907C59.2601 24.232 59.1558 24.507 58.9473 24.7156C58.7576 24.9052 58.5016 25 58.1793 25ZM58.1508 6.48266C57.7336 6.48266 57.3733 6.33096 57.0699 6.02755C56.7665 5.72415 56.6148 5.35437 56.6148 4.91822C56.6148 4.44415 56.7665 4.07437 57.0699 3.80889C57.3923 3.52444 57.7621 3.38222 58.1793 3.38222C58.5775 3.38222 58.9283 3.52444 59.2317 3.80889C59.5541 4.07437 59.7153 4.44415 59.7153 4.91822C59.7153 5.35437 59.5635 5.72415 59.2601 6.02755C58.9567 6.33096 58.587 6.48266 58.1508 6.48266ZM72.2895 25.1422C70.8104 25.1422 69.4735 24.8009 68.2788 24.1182C67.1031 23.4356 66.1644 22.5064 65.4628 21.3307C64.7801 20.136 64.4293 18.7991 64.4104 17.32V3.89422C64.4104 3.55289 64.5052 3.2874 64.6948 3.09777C64.9034 2.88918 65.1784 2.78489 65.5197 2.78489C65.8421 2.78489 66.0981 2.88918 66.2877 3.09777C66.4963 3.2874 66.6006 3.55289 66.6006 3.89422V12.2569C67.2264 11.3656 68.0513 10.6545 69.0753 10.1236C70.1182 9.57363 71.275 9.29866 72.5455 9.29866C74.0056 9.29866 75.3141 9.64948 76.4708 10.3511C77.6276 11.0338 78.5378 11.9724 79.2015 13.1671C79.8841 14.3618 80.2255 15.7081 80.2255 17.2062C80.2255 18.7233 79.8747 20.0791 79.173 21.2738C78.4904 22.4684 77.5517 23.4166 76.357 24.1182C75.1624 24.8009 73.8065 25.1422 72.2895 25.1422ZM72.2895 23.1511C73.3893 23.1511 74.3754 22.8951 75.2477 22.3831C76.12 21.8521 76.8027 21.141 77.2957 20.2498C77.8077 19.3585 78.0637 18.344 78.0637 17.2062C78.0637 16.0874 77.8077 15.0824 77.2957 14.1911C76.8027 13.2809 76.12 12.5698 75.2477 12.0578C74.3754 11.5458 73.3893 11.2898 72.2895 11.2898C71.2086 11.2898 70.232 11.5458 69.3597 12.0578C68.4874 12.5698 67.8047 13.2809 67.3117 14.1911C66.8187 15.0824 66.5721 16.0874 66.5721 17.2062C66.5721 18.344 66.8187 19.3585 67.3117 20.2498C67.8047 21.141 68.4874 21.8521 69.3597 22.3831C70.232 22.8951 71.2086 23.1511 72.2895 23.1511Z"
-                            fill="#110415" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M15.8464 2.96296H8.58307e-06L6.67216 9.63511H22.5185L15.8464 2.96296ZM6.67215 9.63512V25.4815L0 18.8093V2.96297L6.67215 9.63512Z"
-                            fill="#CCCCCC" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M6.67218 25.4815L22.5185 25.4815L15.8464 18.8093L2.28882e-05 18.8093L6.67218 25.4815ZM15.8464 18.8093L15.8464 2.96296L22.5186 9.63511L22.5186 25.4815L15.8464 18.8093Z"
-                            fill="black" />
-                    </svg>
-                </a>
-            </a>
-            <div class="header__menu flex">
-                <a href="mypage.html">My Page</a>
-                <a href="subscribes.html">Subscribes</a>
-                <a href="trending.html">Trending</a>
-                <a href="create.html">Create Channel</a>
-            </div>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+      <a href="index.html" class="header__logo">
+        <a href="#">
+          <svg width="123" height="32" viewBox="-20 -3 123 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M44.013 25.1422C42.515 25.1422 41.1686 24.8009 39.9739 24.1182C38.7793 23.4166 37.8311 22.4684 37.1295 21.2738C36.4468 20.0791 36.1055 18.7233 36.1055 17.2062C36.1055 15.7081 36.4373 14.3618 37.101 13.1671C37.7837 11.9724 38.7034 11.0338 39.8601 10.3511C41.0169 9.64948 42.3253 9.29866 43.7855 9.29866C45.056 9.29866 46.2033 9.57363 47.2273 10.1236C48.2513 10.6545 49.0761 11.3656 49.7019 12.2569V3.89422C49.7019 3.55289 49.8062 3.2874 50.0148 3.09777C50.2234 2.88918 50.4889 2.78489 50.8113 2.78489C51.1336 2.78489 51.3991 2.88918 51.6077 3.09777C51.8163 3.2874 51.9206 3.55289 51.9206 3.89422V17.32C51.8827 18.7991 51.5129 20.136 50.8113 21.3307C50.1286 22.5064 49.1899 23.4356 47.9953 24.1182C46.8195 24.8009 45.4921 25.1422 44.013 25.1422ZM44.013 23.1511C45.1129 23.1511 46.0895 22.8951 46.9428 22.3831C47.8151 21.8521 48.4978 21.141 48.9908 20.2498C49.5028 19.3585 49.7588 18.344 49.7588 17.2062C49.7588 16.0874 49.5028 15.0824 48.9908 14.1911C48.4978 13.2809 47.8151 12.5698 46.9428 12.0578C46.0895 11.5458 45.1129 11.2898 44.013 11.2898C42.9321 11.2898 41.9555 11.5458 41.0833 12.0578C40.211 12.5698 39.5188 13.2809 39.0068 14.1911C38.4948 15.0824 38.2388 16.0874 38.2388 17.2062C38.2388 18.344 38.4948 19.3585 39.0068 20.2498C39.5188 21.141 40.211 21.8521 41.0833 22.3831C41.9555 22.8951 42.9321 23.1511 44.013 23.1511ZM58.1793 25C57.8379 25 57.563 24.9052 57.3544 24.7156C57.1647 24.507 57.0699 24.232 57.0699 23.8907V10.5502C57.0699 10.2089 57.1647 9.94341 57.3544 9.75378C57.563 9.54518 57.8379 9.44089 58.1793 9.44089C58.5016 9.44089 58.7576 9.54518 58.9473 9.75378C59.1558 9.94341 59.2601 10.2089 59.2601 10.5502V23.8907C59.2601 24.232 59.1558 24.507 58.9473 24.7156C58.7576 24.9052 58.5016 25 58.1793 25ZM58.1508 6.48266C57.7336 6.48266 57.3733 6.33096 57.0699 6.02755C56.7665 5.72415 56.6148 5.35437 56.6148 4.91822C56.6148 4.44415 56.7665 4.07437 57.0699 3.80889C57.3923 3.52444 57.7621 3.38222 58.1793 3.38222C58.5775 3.38222 58.9283 3.52444 59.2317 3.80889C59.5541 4.07437 59.7153 4.44415 59.7153 4.91822C59.7153 5.35437 59.5635 5.72415 59.2601 6.02755C58.9567 6.33096 58.587 6.48266 58.1508 6.48266ZM72.2895 25.1422C70.8104 25.1422 69.4735 24.8009 68.2788 24.1182C67.1031 23.4356 66.1644 22.5064 65.4628 21.3307C64.7801 20.136 64.4293 18.7991 64.4104 17.32V3.89422C64.4104 3.55289 64.5052 3.2874 64.6948 3.09777C64.9034 2.88918 65.1784 2.78489 65.5197 2.78489C65.8421 2.78489 66.0981 2.88918 66.2877 3.09777C66.4963 3.2874 66.6006 3.55289 66.6006 3.89422V12.2569C67.2264 11.3656 68.0513 10.6545 69.0753 10.1236C70.1182 9.57363 71.275 9.29866 72.5455 9.29866C74.0056 9.29866 75.3141 9.64948 76.4708 10.3511C77.6276 11.0338 78.5378 11.9724 79.2015 13.1671C79.8841 14.3618 80.2255 15.7081 80.2255 17.2062C80.2255 18.7233 79.8747 20.0791 79.173 21.2738C78.4904 22.4684 77.5517 23.4166 76.357 24.1182C75.1624 24.8009 73.8065 25.1422 72.2895 25.1422ZM72.2895 23.1511C73.3893 23.1511 74.3754 22.8951 75.2477 22.3831C76.12 21.8521 76.8027 21.141 77.2957 20.2498C77.8077 19.3585 78.0637 18.344 78.0637 17.2062C78.0637 16.0874 77.8077 15.0824 77.2957 14.1911C76.8027 13.2809 76.12 12.5698 75.2477 12.0578C74.3754 11.5458 73.3893 11.2898 72.2895 11.2898C71.2086 11.2898 70.232 11.5458 69.3597 12.0578C68.4874 12.5698 67.8047 13.2809 67.3117 14.1911C66.8187 15.0824 66.5721 16.0874 66.5721 17.2062C66.5721 18.344 66.8187 19.3585 67.3117 20.2498C67.8047 21.141 68.4874 21.8521 69.3597 22.3831C70.232 22.8951 71.2086 23.1511 72.2895 23.1511Z"
+              fill="#110415" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.8464 2.96296H8.58307e-06L6.67216 9.63511H22.5185L15.8464 2.96296ZM6.67215 9.63512V25.4815L0 18.8093V2.96297L6.67215 9.63512Z"
+              fill="#CCCCCC" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6.67218 25.4815L22.5185 25.4815L15.8464 18.8093L2.28882e-05 18.8093L6.67218 25.4815ZM15.8464 18.8093L15.8464 2.96296L22.5186 9.63511L22.5186 25.4815L15.8464 18.8093Z"
+              fill="black" />
+          </svg>
+        </a>
+      </a>
+      <div class="header__menu flex">
+        <a href="mypage.html">My Page</a>
+        <a href="subscribes.html">Subscribes</a>
+        <a href="trending.html">Trending</a>
+        <a href="create.html">Create Channel</a>
+      </div>
+    </nav>
+  </header>
 
-    <section class="create flex">
-        <div class="create__container flex flex-ai-c">
+  <section class="create flex">
+    <div class="create__container flex flex-ai-c">
 
-            <div class="create__container__name flex">
-                <div class="name_text">Channel name</div>
-                <div class="channel_name">
-                    <form action="channel_name_upload.jsp" method="post" id="channelNameUpload"
-                        name="channelNameUpload">
-                        <input type="text" id="name" class="text_input" required>
-                    </form>
-                </div>
-            </div>
-
-            <div class="create__container__image">
-                <div class="image_text">Channel image</div>
-                <div class="image_container flex flex-jc-sb flex-ai-c">
-                    <div class="image"></div>
-                    <div class="upload_button">
-                        <form action="channel_image_upload.jsp" method="post" id="channelImageUpload"
-                            name="channelImageUpload">
-                            <button class="image_upload_button">Upload image
-                                <input id="image_upload" type="file" name="user_image" value="channelImageUpload" />
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="create__container__invite flex">
-                <div class="text_button">
-                    <a href="#" class="text_button_sm">Invite Cohosts</a>
-                </div>
-            </div>
-
-            <div class="create__container__cohosts flex">
-                <div class="invited_text">Invited Cohost</div>
-                <div class="grid_container">
-                    <div class="grid flex flex-jc-sb">
-                        <div class="cohost_image_container flex flex-jc-c">
-                            <div class="cohost_image"></div>
-                            <div class="cohost_name">
-                                <span class="text_button_sm_normal">Snoop Dog</span>
-                            </div>
-                            <div class="status flex flex-jc-c">
-                                <div class="change">
-                                    <span class="text_button_sm">change</span>
-                                </div>
-                                <div class="remove">
-                                    <span class="text_button_sm">remove</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cohost_image_container flex flex-jc-c">
-                            <div class="cohost_image"></div>
-                            <div class="cohost_name">
-                                <span class="text_button_sm_normal">Snoop Dog</span>
-                            </div>
-                            <div class="status flex flex-jc-c">
-                                <div class="change">
-                                    <span class="text_button_sm">change</span>
-                                </div>
-                                <div class="remove">
-                                    <span class="text_button_sm">remove</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cohost_image_container flex flex-jc-c">
-                            <div class="cohost_image"></div>
-                            <div class="cohost_name">
-                                <span class="text_button_sm_normal">Snoop Dog</span>
-                            </div>
-                            <div class="status flex flex-jc-c">
-                                <div class="change">
-                                    <span class="text_button_sm">change</span>
-                                </div>
-                                <div class="remove">
-                                    <span class="text_button_sm">remove</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- jquery: 마우스 hover할 때, 버튼 hover 시 이미지 hover 시 opacity 유지 -->
-                        <!-- 슬라이더로 여러 명의 cohosts 보여줄 수 있도록 할 것. -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="create__container__interests flex">
-                <div class="interests_text">Interests</div>
-                <div class="grid">
-                    <div class="grid_container">
-                        <div class="interest_image" id="interest_image">
-                            <h2>
-                                <span id="interest">Music</span>
-                            </h2>
-                        </div>
-                        <div class="interest_image" id="interest_image">
-                            <h2>
-                                <span id="interest">Sports</span>
-                            </h2>
-                        </div>
-                        <div class="interest_image" id="interest_image">
-                            <h2>
-                                <span id="interest">Travel</span>
-                            </h2>
-                        </div>
-                        <div class="more">
-                            <h2>
-                                <span id="more" class="text_button_sm">more</span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- jquery: more를 누르면 interest list 가 3개씩 expand 되어 보이기. 한번이라도 expand 된 리스트는 more 옆에 collapse라는 버튼이 활성화된다. -->
-            </div>
-
-            <div class="create__container__policy flex">
-                <div class="text_button">
-                    <a href="#" class="text_button_sm">Upload Channel Operation Policy</a>
-                </div>
-            </div>
-
-            <div class="create__container__save flex">
-                <div id="save" class="save">
-                    <a href="#" class="text_button_sm">Save</a>
-                </div>
-            </div>
-
+      <div class="create__container__name flex">
+        <div class="name_text">Channel name</div>
+        <div class="channel_name">
+          <form action="channel_name_upload.jsp" method="post" id="channelNameUpload" name="channelNameUpload">
+            <input type="text" id="name" class="text_input" required>
+          </form>
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-
-        <div class="footer__content container--pall">
-
-            <!-- align info links with a logo horizontally using flex -->
-            <div class="footer__content__info flex flex-jc-sb flex-ai-c">
-                <div><a href="#">Mobile app</a></div>
-                <div><a href="#">Community</a></div>
-                <div><a href="#">Company</a></div>
-                <div>
-                    <svg width="123" height="32" viewBox="-20 -3 123 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M44.013 25.1422C42.515 25.1422 41.1686 24.8009 39.9739 24.1182C38.7793 23.4166 37.8311 22.4684 37.1295 21.2738C36.4468 20.0791 36.1055 18.7233 36.1055 17.2062C36.1055 15.7081 36.4373 14.3618 37.101 13.1671C37.7837 11.9724 38.7034 11.0338 39.8601 10.3511C41.0169 9.64948 42.3253 9.29866 43.7855 9.29866C45.056 9.29866 46.2033 9.57363 47.2273 10.1236C48.2513 10.6545 49.0761 11.3656 49.7019 12.2569V3.89422C49.7019 3.55289 49.8062 3.2874 50.0148 3.09777C50.2234 2.88918 50.4889 2.78489 50.8113 2.78489C51.1336 2.78489 51.3991 2.88918 51.6077 3.09777C51.8163 3.2874 51.9206 3.55289 51.9206 3.89422V17.32C51.8827 18.7991 51.5129 20.136 50.8113 21.3307C50.1286 22.5064 49.1899 23.4356 47.9953 24.1182C46.8195 24.8009 45.4921 25.1422 44.013 25.1422ZM44.013 23.1511C45.1129 23.1511 46.0895 22.8951 46.9428 22.3831C47.8151 21.8521 48.4978 21.141 48.9908 20.2498C49.5028 19.3585 49.7588 18.344 49.7588 17.2062C49.7588 16.0874 49.5028 15.0824 48.9908 14.1911C48.4978 13.2809 47.8151 12.5698 46.9428 12.0578C46.0895 11.5458 45.1129 11.2898 44.013 11.2898C42.9321 11.2898 41.9555 11.5458 41.0833 12.0578C40.211 12.5698 39.5188 13.2809 39.0068 14.1911C38.4948 15.0824 38.2388 16.0874 38.2388 17.2062C38.2388 18.344 38.4948 19.3585 39.0068 20.2498C39.5188 21.141 40.211 21.8521 41.0833 22.3831C41.9555 22.8951 42.9321 23.1511 44.013 23.1511ZM58.1793 25C57.8379 25 57.563 24.9052 57.3544 24.7156C57.1647 24.507 57.0699 24.232 57.0699 23.8907V10.5502C57.0699 10.2089 57.1647 9.94341 57.3544 9.75378C57.563 9.54518 57.8379 9.44089 58.1793 9.44089C58.5016 9.44089 58.7576 9.54518 58.9473 9.75378C59.1558 9.94341 59.2601 10.2089 59.2601 10.5502V23.8907C59.2601 24.232 59.1558 24.507 58.9473 24.7156C58.7576 24.9052 58.5016 25 58.1793 25ZM58.1508 6.48266C57.7336 6.48266 57.3733 6.33096 57.0699 6.02755C56.7665 5.72415 56.6148 5.35437 56.6148 4.91822C56.6148 4.44415 56.7665 4.07437 57.0699 3.80889C57.3923 3.52444 57.7621 3.38222 58.1793 3.38222C58.5775 3.38222 58.9283 3.52444 59.2317 3.80889C59.5541 4.07437 59.7153 4.44415 59.7153 4.91822C59.7153 5.35437 59.5635 5.72415 59.2601 6.02755C58.9567 6.33096 58.587 6.48266 58.1508 6.48266ZM72.2895 25.1422C70.8104 25.1422 69.4735 24.8009 68.2788 24.1182C67.1031 23.4356 66.1644 22.5064 65.4628 21.3307C64.7801 20.136 64.4293 18.7991 64.4104 17.32V3.89422C64.4104 3.55289 64.5052 3.2874 64.6948 3.09777C64.9034 2.88918 65.1784 2.78489 65.5197 2.78489C65.8421 2.78489 66.0981 2.88918 66.2877 3.09777C66.4963 3.2874 66.6006 3.55289 66.6006 3.89422V12.2569C67.2264 11.3656 68.0513 10.6545 69.0753 10.1236C70.1182 9.57363 71.275 9.29866 72.5455 9.29866C74.0056 9.29866 75.3141 9.64948 76.4708 10.3511C77.6276 11.0338 78.5378 11.9724 79.2015 13.1671C79.8841 14.3618 80.2255 15.7081 80.2255 17.2062C80.2255 18.7233 79.8747 20.0791 79.173 21.2738C78.4904 22.4684 77.5517 23.4166 76.357 24.1182C75.1624 24.8009 73.8065 25.1422 72.2895 25.1422ZM72.2895 23.1511C73.3893 23.1511 74.3754 22.8951 75.2477 22.3831C76.12 21.8521 76.8027 21.141 77.2957 20.2498C77.8077 19.3585 78.0637 18.344 78.0637 17.2062C78.0637 16.0874 77.8077 15.0824 77.2957 14.1911C76.8027 13.2809 76.12 12.5698 75.2477 12.0578C74.3754 11.5458 73.3893 11.2898 72.2895 11.2898C71.2086 11.2898 70.232 11.5458 69.3597 12.0578C68.4874 12.5698 67.8047 13.2809 67.3117 14.1911C66.8187 15.0824 66.5721 16.0874 66.5721 17.2062C66.5721 18.344 66.8187 19.3585 67.3117 20.2498C67.8047 21.141 68.4874 21.8521 69.3597 22.3831C70.232 22.8951 71.2086 23.1511 72.2895 23.1511Z"
-                            fill="#110415" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M15.8464 2.96296H8.58307e-06L6.67216 9.63511H22.5185L15.8464 2.96296ZM6.67215 9.63512V25.4815L0 18.8093V2.96297L6.67215 9.63512Z"
-                            fill="#CCCCCC" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M6.67218 25.4815L22.5185 25.4815L15.8464 18.8093L2.28882e-05 18.8093L6.67218 25.4815ZM15.8464 18.8093L15.8464 2.96296L22.5186 9.63511L22.5186 25.4815L15.8464 18.8093Z"
-                            fill="black" />
-                    </svg>
-                </div>
-                <div><a href="#">Help desk</a></div>
-                <div><a href="#">Blog</a></div>
-                <div><a href="#">Resources</a></div>
-            </div>
-
-            <div class="footer__content__divider"></div>
-
-            <!-- social links -->
-            <div class="footer__content__social flex flex-jc-c flex-ai-c">
-                <div>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                            <title>Facebook</title>
-                            <path fill="#C17BDA"
-                                d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
-                        </svg>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                            <title>Pinterest</title>
-                            <path fill="#C17BDA"
-                                d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z" />
-                        </svg>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
-                            <title>Twitter</title>
-                            <path fill="#C17BDA"
-                                d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z" />
-                        </svg>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">Youtube
-                            <path fill="#C17BDA"
-                                d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z" />
-                        </svg>
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- copyright -->
-            <div class="footer__content__copyright flex flex-jc-c">
-                <p>©Copyright; all rights are reserved for dib.</p>
-            </div>
+      <div class="create__container__image">
+        <div class="image_text">Channel image</div>
+        <div class="image_container flex flex-jc-sb flex-ai-c">
+          <div class="image"></div>
+          <div class="upload_button">
+            <form action="channel_image_upload.jsp" method="post" id="channelImageUpload" name="channelImageUpload">
+              <button class="image_upload_button">Upload image
+                <input id="image_upload" type="file" name="user_image" value="channelImageUpload" />
+              </button>
+            </form>
+          </div>
         </div>
-    </footer>
-    <script src="/app/js/script.js"></script>
+      </div>
+
+      <div class="create__container__cohosts flex">
+        <div class="invited_text">Invite Cohost</div>
+        <div class="grid_container">
+          <div class="grid flex flex-jc-sb">
+            <div class="cohost_image_container flex flex-jc-c">
+              <div class="cohost_image"></div>
+              <div class="cohost_name">
+                <span class="text_button_sm_normal">Snoop Dog</span>
+              </div>
+              <div class="status flex flex-jc-c">
+                <div class="change">
+                  <span class="text_button_sm">change</span>
+                </div>
+                <div class="remove">
+                  <span class="text_button_sm">remove</span>
+                </div>
+              </div>
+            </div>
+            <div class="cohost_image_container flex flex-jc-c">
+              <div class="cohost_image"></div>
+              <div class="cohost_name">
+                <span class="text_button_sm_normal">Snoop Dog</span>
+              </div>
+              <div class="status flex flex-jc-c">
+                <div class="change">
+                  <span class="text_button_sm">change</span>
+                </div>
+                <div class="remove">
+                  <span class="text_button_sm">remove</span>
+                </div>
+              </div>
+            </div>
+            <div class="cohost_image_container flex flex-jc-c">
+              <div class="cohost_image"></div>
+              <div class="cohost_name">
+                <span class="text_button_sm_normal">Snoop Dog</span>
+              </div>
+              <div class="status flex flex-jc-c">
+                <div class="change">
+                  <span class="text_button_sm">change</span>
+                </div>
+                <div class="remove">
+                  <span class="text_button_sm">remove</span>
+                </div>
+              </div>
+            </div>
+            <!-- jquery: 마우스 hover할 때, 버튼 hover 시 이미지 hover 시 opacity 유지 -->
+            <!-- 슬라이더로 여러 명의 cohosts 보여줄 수 있도록 할 것. -->
+          </div>
+        </div>
+      </div>
+
+      <div class="create__container__interests flex">
+        <div class="interests_text">Interests</div>
+        <div class="grid">
+          <div class="grid_container">
+            <div class="interest_image" id="interest_image">
+              <h2>
+                <span id="interest">Music</span>
+              </h2>
+            </div>
+            <div class="interest_image" id="interest_image">
+              <h2>
+                <span id="interest">Sports</span>
+              </h2>
+            </div>
+            <div class="interest_image" id="interest_image">
+              <h2>
+                <span id="interest">Travel</span>
+              </h2>
+            </div>
+            <div class="add_interest" id="add_interest">
+              <h2>
+                <span id="interest" class="text_button_sm">Add interest</span>
+              </h2>
+            </div>
+            <div class="more">
+              <h2>
+                <span id="more" class="text_button_sm">more</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <!-- jquery: more를 누르면 interest list 가 3개씩 expand 되어 보이기. 한번이라도 expand 된 리스트는 more 옆에 collapse라는 버튼이 활성화된다. -->
+      </div>
+
+      <div class="create__container__policy flex">
+        <div class="text_button">
+          <a href="#" class="text_button_sm">Upload Channel Operation Policy</a>
+        </div>
+      </div>
+
+      <div class="create__container__save flex">
+        <div id="save" class="save">
+          <a href="#" class="text_button_sm">Save and open channel</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="footer__content container--pall">
+
+      <!-- align info links with a logo horizontally using flex -->
+      <div class="footer__content__info flex flex-jc-sb flex-ai-c">
+        <div><a href="#">Mobile app</a></div>
+        <div><a href="#">Community</a></div>
+        <div><a href="#">Company</a></div>
+        <div>
+          <svg width="123" height="32" viewBox="-20 -3 123 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M44.013 25.1422C42.515 25.1422 41.1686 24.8009 39.9739 24.1182C38.7793 23.4166 37.8311 22.4684 37.1295 21.2738C36.4468 20.0791 36.1055 18.7233 36.1055 17.2062C36.1055 15.7081 36.4373 14.3618 37.101 13.1671C37.7837 11.9724 38.7034 11.0338 39.8601 10.3511C41.0169 9.64948 42.3253 9.29866 43.7855 9.29866C45.056 9.29866 46.2033 9.57363 47.2273 10.1236C48.2513 10.6545 49.0761 11.3656 49.7019 12.2569V3.89422C49.7019 3.55289 49.8062 3.2874 50.0148 3.09777C50.2234 2.88918 50.4889 2.78489 50.8113 2.78489C51.1336 2.78489 51.3991 2.88918 51.6077 3.09777C51.8163 3.2874 51.9206 3.55289 51.9206 3.89422V17.32C51.8827 18.7991 51.5129 20.136 50.8113 21.3307C50.1286 22.5064 49.1899 23.4356 47.9953 24.1182C46.8195 24.8009 45.4921 25.1422 44.013 25.1422ZM44.013 23.1511C45.1129 23.1511 46.0895 22.8951 46.9428 22.3831C47.8151 21.8521 48.4978 21.141 48.9908 20.2498C49.5028 19.3585 49.7588 18.344 49.7588 17.2062C49.7588 16.0874 49.5028 15.0824 48.9908 14.1911C48.4978 13.2809 47.8151 12.5698 46.9428 12.0578C46.0895 11.5458 45.1129 11.2898 44.013 11.2898C42.9321 11.2898 41.9555 11.5458 41.0833 12.0578C40.211 12.5698 39.5188 13.2809 39.0068 14.1911C38.4948 15.0824 38.2388 16.0874 38.2388 17.2062C38.2388 18.344 38.4948 19.3585 39.0068 20.2498C39.5188 21.141 40.211 21.8521 41.0833 22.3831C41.9555 22.8951 42.9321 23.1511 44.013 23.1511ZM58.1793 25C57.8379 25 57.563 24.9052 57.3544 24.7156C57.1647 24.507 57.0699 24.232 57.0699 23.8907V10.5502C57.0699 10.2089 57.1647 9.94341 57.3544 9.75378C57.563 9.54518 57.8379 9.44089 58.1793 9.44089C58.5016 9.44089 58.7576 9.54518 58.9473 9.75378C59.1558 9.94341 59.2601 10.2089 59.2601 10.5502V23.8907C59.2601 24.232 59.1558 24.507 58.9473 24.7156C58.7576 24.9052 58.5016 25 58.1793 25ZM58.1508 6.48266C57.7336 6.48266 57.3733 6.33096 57.0699 6.02755C56.7665 5.72415 56.6148 5.35437 56.6148 4.91822C56.6148 4.44415 56.7665 4.07437 57.0699 3.80889C57.3923 3.52444 57.7621 3.38222 58.1793 3.38222C58.5775 3.38222 58.9283 3.52444 59.2317 3.80889C59.5541 4.07437 59.7153 4.44415 59.7153 4.91822C59.7153 5.35437 59.5635 5.72415 59.2601 6.02755C58.9567 6.33096 58.587 6.48266 58.1508 6.48266ZM72.2895 25.1422C70.8104 25.1422 69.4735 24.8009 68.2788 24.1182C67.1031 23.4356 66.1644 22.5064 65.4628 21.3307C64.7801 20.136 64.4293 18.7991 64.4104 17.32V3.89422C64.4104 3.55289 64.5052 3.2874 64.6948 3.09777C64.9034 2.88918 65.1784 2.78489 65.5197 2.78489C65.8421 2.78489 66.0981 2.88918 66.2877 3.09777C66.4963 3.2874 66.6006 3.55289 66.6006 3.89422V12.2569C67.2264 11.3656 68.0513 10.6545 69.0753 10.1236C70.1182 9.57363 71.275 9.29866 72.5455 9.29866C74.0056 9.29866 75.3141 9.64948 76.4708 10.3511C77.6276 11.0338 78.5378 11.9724 79.2015 13.1671C79.8841 14.3618 80.2255 15.7081 80.2255 17.2062C80.2255 18.7233 79.8747 20.0791 79.173 21.2738C78.4904 22.4684 77.5517 23.4166 76.357 24.1182C75.1624 24.8009 73.8065 25.1422 72.2895 25.1422ZM72.2895 23.1511C73.3893 23.1511 74.3754 22.8951 75.2477 22.3831C76.12 21.8521 76.8027 21.141 77.2957 20.2498C77.8077 19.3585 78.0637 18.344 78.0637 17.2062C78.0637 16.0874 77.8077 15.0824 77.2957 14.1911C76.8027 13.2809 76.12 12.5698 75.2477 12.0578C74.3754 11.5458 73.3893 11.2898 72.2895 11.2898C71.2086 11.2898 70.232 11.5458 69.3597 12.0578C68.4874 12.5698 67.8047 13.2809 67.3117 14.1911C66.8187 15.0824 66.5721 16.0874 66.5721 17.2062C66.5721 18.344 66.8187 19.3585 67.3117 20.2498C67.8047 21.141 68.4874 21.8521 69.3597 22.3831C70.232 22.8951 71.2086 23.1511 72.2895 23.1511Z"
+              fill="#110415" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.8464 2.96296H8.58307e-06L6.67216 9.63511H22.5185L15.8464 2.96296ZM6.67215 9.63512V25.4815L0 18.8093V2.96297L6.67215 9.63512Z"
+              fill="#CCCCCC" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6.67218 25.4815L22.5185 25.4815L15.8464 18.8093L2.28882e-05 18.8093L6.67218 25.4815ZM15.8464 18.8093L15.8464 2.96296L22.5186 9.63511L22.5186 25.4815L15.8464 18.8093Z"
+              fill="black" />
+          </svg>
+        </div>
+        <div><a href="#">Help desk</a></div>
+        <div><a href="#">Blog</a></div>
+        <div><a href="#">Resources</a></div>
+      </div>
+
+      <div class="footer__content__divider"></div>
+
+      <!-- social links -->
+      <div class="footer__content__social flex flex-jc-c flex-ai-c">
+        <div>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <title>Facebook</title>
+              <path fill="#C17BDA"
+                d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <title>Pinterest</title>
+              <path fill="#C17BDA"
+                d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z" />
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
+              <title>Twitter</title>
+              <path fill="#C17BDA"
+                d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z" />
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">Youtube
+              <path fill="#C17BDA"
+                d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- copyright -->
+      <div class="footer__content__copyright flex flex-jc-c">
+        <p>©Copyright; all rights are reserved for dib.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Chat buttons -->
+  <div class="chatbox">
+    <div class="chatbox__container flex">
+      <div class="messanger">
+        <svg width="35" height="35" viewBox="0 0 127 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M63.5002 10.5C34.396 10.5 10.5835 34.125 10.5835 63C10.5835 75.075 14.8168 86.625 22.7543 96.075L12.171 106.575C10.0543 108.675 10.0543 111.825 12.171 113.925C13.2293 114.975 14.2877 115.5 15.8752 115.5L63.5002 115.5C92.6043 115.5 116.417 91.875 116.417 63C116.417 34.125 92.6043 10.5 63.5002 10.5ZM42.3335 68.25C39.1585 68.25 37.0418 66.15 37.0418 63C37.0418 59.85 39.1585 57.75 42.3335 57.75C45.5085 57.75 47.6252 59.85 47.6252 63C47.6252 66.15 45.5085 68.25 42.3335 68.25ZM63.5002 68.25C60.3252 68.25 58.2085 66.15 58.2085 63C58.2085 59.85 60.3252 57.75 63.5002 57.75C66.6752 57.75 68.7918 59.85 68.7918 63C68.7918 66.15 66.6752 68.25 63.5002 68.25ZM84.6668 68.25C81.4918 68.25 79.3752 66.15 79.3752 63C79.3752 59.85 81.4918 57.75 84.6668 57.75C87.8418 57.75 89.9585 59.85 89.9585 63C89.9585 66.15 87.8418 68.25 84.6668 68.25Z"
+            fill="#C17BDA" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat buttons - messanger box -->
+  <div class="messanger_box">
+    <div class="messanger_box__container">
+      <div class="messanger_box__container__header flex flex-jc-sb flex-ai-c">
+        <div class="messanger_box__container__header__chat_title">
+          <span>Among-us final</span>
+        </div>
+        <div class="messanger_box__container__header__icons flex flex-jc-c flex-ai-c">
+          <div class="messanger_box__container__header__icons__profile_icon1"></div>
+          <div class="messanger_box__container__header__icons__profile_icon2"></div>
+          <div class="messanger_box__container__header__icons__profile_icon3"></div>
+          <div class="messanger_box__container__header__icons__profile_icon4"></div>
+          <div class="messanger_box__container__header__icons__profile_icon5"></div>
+        </div>
+        <div class="messanger_box__container__header__participant flex">
+          <span id="participant1" class="">Elon Musk &nbsp;</span>
+          <span id="participant1">Mark</span>
+          <span id="reduction">...</span>
+        </div>
+      </div>
+
+      <div class="messanger_box__container__chatbox">
+        <div class="messanger_box__container__chatbox__me flex">
+          <div class="messanger_box__container__chatbox__me__profile"></div>
+          <div class="messanger_box__container__chatbox__me__message flex">
+            <p class="content">Elon, dude, I'm so glad that we could play the final together.</p>
+            <span class="time">11:05 PM</span>
+          </div>
+        </div>
+        <div class="messanger_box__container__chatbox__other flex">
+          <div class="messanger_box__container__chatbox__other__profile"></div>
+          <div class="messanger_box__container__chatbox__other__message flex">
+            <p class="content">Elon, dude, I'm so glad that we could play the final together.</p>
+            <span class="time">11:05 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="messanger_box__container__inputarea">
+        <div class="messanger_box__container__inputarea__inputbox">
+          <form action="message.jsp">
+            <label for="message">
+              <div class="grow_wrap">
+                <textarea name="message" id="message" onInput="this.parentNode.dataset.replicatedVaue = this.value"
+                  cols="30" rows="1"></textarea>
+              </div>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/app/js/header.js"></script>
+  <script src="/app/js/script.js"></script>
+  <script src="/app/js/chatbox.js"></script>
 </body>
 
 </html>

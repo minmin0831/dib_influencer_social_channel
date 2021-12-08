@@ -1,303 +1,341 @@
 .subscribes {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    &__container {
-        width: 1000px;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px 10px 0 0;
-        flex-direction: column;
-        background-color: $brighterBlack;
+  &__container {
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    flex-direction: column;
 
-        .subscribing_text {
-            padding: 0 30px 0 30px;
-            font-size: 2.5rem;
-            font-weight: 600;
-            height: 100px;
-        }
-
-        .subscribe_menu {
-            padding: 0 30px 0 30px;
-            width: 70%;
-            height: 80px;
-
-            span {
-                position: relative;
-                font-size: 1.5rem;
-                font-weight: 600;
-
-                &::before {
-                    content: "";
-                    height: 4px;
-                    position: absolute;
-                    right: 0;
-                    bottom: -21px;
-                    left: 0;
-                    display: block;
-                    background: linear-gradient(to right, $brightBlue 0%, $grayishBlue 100%);
-                    opacity: 0;
-                    transition: opacity 300ms ease-in-out;
-                }
-
-                &:hover {
-                    
-                    &::before {
-                        opacity: 1;
-                    }
-                }
-            }
-        }
-
-        .live_channel {
-            padding: 0 30px 0 30px;
-
-            &__text {
-                position: relative;
-                width: 100%;
-                height: 80px;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    height: 1px;
-                    display: block;
-                    background-color: $brightBlue;
-                    opacity: 1;
-                }
-
-                span {
-                    font-size: 1.25rem;
-                    font-weight: 600;
-                    color: $grayishBlue;
-                }
-            }
-
-            &__container {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 50px;
-                border: 1px solid $grayishBlue;
-                border-radius: 10px;
-
-                &__grid {
-                    width: 100%;
-                    height: 310px;
-                    justify-content: space-around;
-    
-                    .thumbnail {
-                        width: 280px;
-                        height: 270px;
-                        border: 1px solid $grayishPink;
-                        border-radius: 10px;
-                        flex-direction: column;
-                        padding: 10px 20px;
-    
-                        .thumbnail_box {
-                            position: relative;
-                            width: 260px;
-                            height: 170px;
-                            background-image: url(/images/image-confetti.jpg);
-                            background-size: 260px;
-                            background-repeat: no-repeat;
-                            background-position: center;
-    
-                            .background {
-                                position: absolute;
-                                left: 5px;
-                                top: 5px;
-                            }
-    
-                            .viewer {
-                                position: absolute;
-                                left: 5px;
-                                top: 5px;
-                            }
-                        }
-                    }
-                }
-    
-                &__show_more {
-                    text-align: center;
-                    height: 50px;
-                }
-            }
-
-            
-        }
-
-        .latest_video {
-            padding: 0 30px 0 30px;
-
-            &__text {
-                position: relative;
-                width: 100%;
-                height: 80px;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    height: 1px;
-                    display: block;
-                    background-color: $grayishPink;
-                    opacity: 1;
-                }
-
-                span {
-                    font-size: 1.25rem;
-                    font-weight: 600;
-                    color: $grayishPink;
-                }
-            }
-
-            &__container {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 50px;
-                border: 1px solid $grayishPink;
-                border-radius: 10px;
-
-                &__grid {
-                    width: 100%;
-                    height: 310px;
-                    border-radius: 10px;
-                    justify-content: space-around;
-    
-                    .thumbnail {
-                        width: 280px;
-                        height: 270px;
-                        flex-direction: column;
-                        border: 1px solid $grayishBlue;
-                        border-radius: 10px;
-                        padding: 10px 20px;
-    
-                        .thumbnail_box {
-                            width: 260px;
-                            height: 170px;
-                            flex-direction: column;
-                            background-image: url("/images/image-plane.jpg");
-                            background-size: 260px;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            border-radius: 5px;
-                            position: relative;
-    
-                            .playtime_background {
-                                position: absolute;
-                                top: 5px;
-                                left: 5px;
-                            }
-    
-                            .playtime {
-                                position: absolute;
-                                top: 5px;
-                                left: 5px;
-                            }
-    
-                            .views_background {
-                                position: absolute;
-                                bottom: 5px;
-                                left: 5px;
-                            }
-    
-                            .views {
-                                position: absolute;
-                                bottom: 5px;
-                                left: 5px;
-                            }
-    
-                            .age_background {
-                                position: absolute;
-                                bottom: 5px;
-                                right: 5px;
-                            }
-    
-                            .age {
-                                position: absolute;
-                                bottom: 5px;
-                                right: 5px;
-                            }
-                        }
-                    }
-                }
-    
-                &__show_more {
-                    text-align: center;
-                    height: 50px;
-                }
-            }
-        }
-
-        .trending {
-            padding: 0 30px 0 30px;
-
-            &__text {
-                position: relative;
-                width: 100%;
-                height: 80px;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    height: 1px;
-                    display: block;
-                    background-color: $brightBlue;
-                    opacity: 1;
-                }
-
-                span {
-                    font-size: 1.25rem;
-                    font-weight: 600;
-                    color: $grayishBlue;
-                }
-            }
-
-            &__container {
-                width: 100%;
-                height: 100%;
-                border: 1px solid $grayishPink;
-                border-radius: 10px;
-
-                &__grid {
-                    width: 100%;
-                    height: 550px;
-                    border-radius: 10px;
-                    justify-content: space-around;
-
-                    .thumbnail  {
-                        border: 1px solid $grayishBlue;
-                        border-radius: 10px;
-                        width: 270px;
-                        height: 500px;
-                        flex-direction: column;
-                        padding: 10px 20px;
-
-                        .thumbnail_box {
-                            width: 250px;
-                            height: 380px;
-                            background-image: url("/images/among_us.png");
-                            background-size: 260px;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                        }
-                    }
-                }
-    
-                &__show_more {
-                    text-align: center;
-                    height: 50px;
-                }
-            }
-        }
+    .subscribing_text {
+      padding: 0 30px 0 30px;
+      font-size: 2.5rem;
+      font-weight: 600;
+      height: 100px;
     }
+
+    .subscribe_menu {
+      padding: 0 30px 0 30px;
+      width: 70%;
+      height: 80px;
+
+      span {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        &::before {
+          content: "";
+          height: 4px;
+          position: absolute;
+          right: 0;
+          bottom: -21px;
+          left: 0;
+          display: block;
+          background: linear-gradient(
+            to right,
+            $brightBlue 0%,
+            $grayishBlue 100%
+          );
+          opacity: 0;
+          transition: opacity 300ms ease-in-out;
+        }
+
+        &:hover {
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+
+      .current {
+        color: $grayishBlue;
+        cursor: pointer;
+        padding: 3px 6px;
+        transition: color 300ms ease-in-out;
+
+        &::before {
+          content: "";
+          height: 4px;
+          position: absolute;
+          right: 0;
+          bottom: -21px;
+          left: 0;
+          display: block;
+          background: linear-gradient(
+            to right,
+            $brightBlue 0%,
+            $grayishBlue 100%
+          );
+          opacity: 1;
+        }
+      }
+    }
+
+    .live_channel {
+      padding: 0 30px 0 30px;
+
+      &__text {
+        position: relative;
+        width: 100%;
+        height: 80px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          height: 1px;
+          display: block;
+          background-color: $brightBlue;
+          opacity: 1;
+        }
+
+        span {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: $grayishBlue;
+        }
+      }
+
+      &__container {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        border: 1px solid $grayishBlue;
+        border-radius: 10px;
+
+        &__grid {
+          width: 100%;
+          height: 310px;
+          justify-content: space-around;
+
+          .thumbnail {
+            width: 280px;
+            height: 270px;
+            border: 1px solid $grayishPink;
+            border-radius: 10px;
+            flex-direction: column;
+            padding: 10px 20px;
+
+            .thumbnail_box {
+              position: relative;
+              width: 260px;
+              height: 170px;
+              background-image: url(/images/image-confetti.jpg);
+              background-size: 260px;
+              background-repeat: no-repeat;
+              background-position: center;
+
+              .background_left {
+                position: absolute;
+                background-color: red;
+                left: 5px;
+                top: 5px;
+              }
+
+              .live {
+                position: absolute;
+                color: $white;
+                font-style: bold;
+                left: 5px;
+                top: 5px;
+              }
+
+              .background_right {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+              }
+
+              .viewer {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+              }
+            }
+          }
+        }
+
+        &__show_more {
+          text-align: center;
+          height: 50px;
+        }
+      }
+    }
+
+    .latest_video {
+      padding: 0 30px 0 30px;
+
+      &__text {
+        position: relative;
+        width: 100%;
+        height: 80px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          height: 1px;
+          display: block;
+          background-color: $grayishPink;
+          opacity: 1;
+        }
+
+        span {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: $grayishPink;
+        }
+      }
+
+      &__container {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        border: 1px solid $grayishPink;
+        border-radius: 10px;
+
+        &__grid {
+          width: 100%;
+          height: 310px;
+          border-radius: 10px;
+          justify-content: space-around;
+
+          .thumbnail {
+            width: 280px;
+            height: 270px;
+            flex-direction: column;
+            border: 1px solid $grayishBlue;
+            border-radius: 10px;
+            padding: 10px 20px;
+
+            .thumbnail_box {
+              width: 260px;
+              height: 170px;
+              flex-direction: column;
+              background-image: url("/images/image-plane.jpg");
+              background-size: 260px;
+              background-repeat: no-repeat;
+              background-position: center;
+              border-radius: 5px;
+              position: relative;
+
+              .playtime_background {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+              }
+
+              .playtime {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+              }
+
+              .views_background {
+                position: absolute;
+                bottom: 5px;
+                left: 5px;
+              }
+
+              .views {
+                position: absolute;
+                bottom: 5px;
+                left: 5px;
+              }
+
+              .age_background {
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+              }
+
+              .age {
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+              }
+            }
+          }
+        }
+
+        &__show_more {
+          text-align: center;
+          height: 50px;
+        }
+      }
+    }
+
+    .trending {
+      padding: 0 30px 0 30px;
+
+      &__text {
+        position: relative;
+        width: 100%;
+        height: 80px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          height: 1px;
+          display: block;
+          background-color: $brightBlue;
+          opacity: 1;
+        }
+
+        span {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: $grayishBlue;
+        }
+      }
+
+      &__container {
+        width: 100%;
+        height: 100%;
+        border: 1px solid $grayishPink;
+        border-radius: 10px;
+
+        &__grid {
+          width: 100%;
+          height: 550px;
+          border-radius: 10px;
+          justify-content: space-around;
+
+          .thumbnail {
+            border: 1px solid $grayishBlue;
+            border-radius: 10px;
+            width: 270px;
+            height: 500px;
+            flex-direction: column;
+            padding: 10px 20px;
+
+            .thumbnail_box {
+              width: 250px;
+              height: 380px;
+              background-image: url("/images/among_us.png");
+              background-size: 260px;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+        }
+
+        &__show_more {
+          text-align: center;
+          height: 50px;
+        }
+      }
+    }
+  }
 }

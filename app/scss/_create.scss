@@ -9,17 +9,17 @@
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
+    border-radius: 10px;
 
     &__name {
       width: 100%;
       height: 90px;
       line-height: 90px;
-      background-color: $brighterBlack;
       border-radius: 10px 10px 0 0;
 
       .name_text {
         font-size: 1.25rem;
-        width: 150px;
+        width: 200px;
         margin-left: 90px;
       }
 
@@ -34,7 +34,6 @@
       position: relative;
       width: 100%;
       height: 300px;
-      background-color: $brighterBlack;
 
       .image_text {
         position: absolute;
@@ -71,19 +70,9 @@
       }
     }
 
-    &__invite {
-      width: 100%;
-      height: 90px;
-      line-height: 90px;
-      font-size: 1.25rem;
-      padding-left: 90px;
-      background-color: $brighterBlack;
-    }
-
     &__cohosts {
       width: 100%;
       height: 250px;
-      background-color: $brighterBlack;
 
       .invited_text {
         font-size: 1.25rem;
@@ -103,7 +92,7 @@
           top: 25px;
           width: 550px;
           height: 200px;
-          
+
           .cohost_image_container {
             position: relative;
             width: 170px;
@@ -135,7 +124,6 @@
               margin: 3px;
               background-color: $black;
               transition: background-color 500ms ease-in-out;
-              z-index: 10;
 
               &:hover {
                 background-color: $grayishPink;
@@ -148,7 +136,7 @@
               bottom: 5%;
               width: 100%;
               text-align: center;
-  
+
               .change {
                 border-radius: 4px;
                 margin: 2px;
@@ -159,7 +147,7 @@
                   background-color: $grayishPink;
                 }
               }
-  
+
               .remove {
                 border-radius: 4px;
                 margin: 2px;
@@ -178,14 +166,13 @@
 
     &__interests {
       width: 100%;
-      height: 300px;
-      line-height: 300px;
-      background-color: $brighterBlack;
+      height: 330px;
+      line-height: 330px;
 
       .interests_text {
         font-size: 1.25rem;
         width: 150px;
-        height: 300px;
+        height: 330px;
         margin-left: 90px;
       }
 
@@ -210,18 +197,29 @@
             flex-direction: column;
             align-items: center;
             margin-bottom: 10px;
-  
+
             h2 {
-                display: block;
-                margin: auto 0;
-                color: $white;
+              display: block;
+              margin: auto 0;
+              color: $white;
             }
           }
-  
+
+          .add_interest {
+            height: 60px;
+            text-align: center;
+
+            h2 {
+              height: 60px;
+              line-height: 60px;
+              font-size: 1rem;
+            }
+          }
+
           .more {
             height: 60px;
             text-align: center;
-            
+
             h2 {
               height: 60px;
               line-height: 60px;
@@ -237,7 +235,6 @@
       height: 90px;
       line-height: 90px;
       padding-left: 90px;
-      background-color: $brighterBlack;
       font-size: 1.25rem;
     }
 
@@ -246,7 +243,6 @@
       height: 90px;
       line-height: 90px;
       padding-left: 90px;
-      background-color: $brighterBlack;
       font-size: 1.25rem;
       border-radius: 0 0 5px 5px;
     }

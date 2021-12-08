@@ -1,55 +1,51 @@
 .footer {
-    
+  &__content {
+    max-width: 100%;
+    position: relative;
+    height: 400px;
 
-    &__content {
-        max-width: 100%;
-        position: relative;
-        height: 400px;
+    &__info {
+      div a {
+        display: inline-block;
+        color: $grayishPink;
+        text-align: center;
+        font-weight: 600;
+        transition: color 300ms ease-in-out;
 
-        &__info {
-
-            div a {
-                display: inline-block;
-                color: $grayishPink;
-                text-align: center;
-                font-weight: 600;
-                transition: color 300ms ease-in-out;
-
-                &:hover {
-                    color: $grayishBlue;
-                }
-            }
+        &:hover {
+          color: $grayishBlue;
         }
-
-        &__divider {
-            margin-top: 48px;
-            border-bottom: 1px solid $black;
-        }
-
-        &__social {
-            margin-top: 48px;
-            
-            div {
-                display: inline-block;
-                margin-left: 10px;
-                margin-right: 10px;
-
-                a {
-                    
-                    svg path {
-                        transition: fill 300ms ease-in-out;
-                    }
-    
-                    &:hover svg path {
-                        fill: $grayishBlue;
-                    }
-                }
-            }
-        }
-
-        &__copyright {
-            margin-top: 48px;
-            color: $black;
-        }
+      }
     }
+
+    &__divider {
+      margin-top: 48px;
+      border-bottom: 1px solid $black;
+    }
+
+    &__social {
+      margin-top: 48px;
+
+      div {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        a {
+          svg path {
+            transition: fill 300ms ease-in-out;
+          }
+
+          &:hover svg path {
+            fill: $grayishBlue;
+          }
+        }
+      }
+    }
+
+    &__copyright {
+      margin-top: 48px;
+      color: $white;
+    }
+  }
 }

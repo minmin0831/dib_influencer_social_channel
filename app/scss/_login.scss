@@ -1,74 +1,73 @@
 .signup {
+  position: relative;
+
+  &__image {
+    width: 70%;
+    height: 960px;
+    background-image: linear-gradient(to right, $lightGray 0%, $lightGray 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
     position: relative;
-    
-    &__image {
-        width: 70%;
-        height: 960px;
-        background-image: linear-gradient(to right, $lightGray 0%, $lightGray 100%);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
-        position: relative;
 
-        &::before {
-            content: "Image";
-            font-size: 5rem;
-            color: $black;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+    &::before {
+      content: "Image";
+      font-size: 5rem;
+      color: $black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__form {
+    flex-direction: column;
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-bottom: 40px;
     }
 
-    &__form {
-        flex-direction: column;
+    form {
+      font-size: 1.5rem;
+      font-weight: 600;
 
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
-            margin-bottom: 40px;
+      div {
+        label {
+          margin-bottom: 10px;
         }
-
-        form {
-            font-size: 1.5rem;
-            font-weight: 600;
-
-            div {
-                
-                label {
-                    margin-bottom: 10px;
-                }
-            }
-        }
-
-        .login {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .social {
-            margin-top: 20px;
-                        
-            div {
-                display: inline-block;
-                margin-left: 10px;
-                margin-right: 10px;
-
-                a {
-                    display: inline-block;
-                    margin-left: 10px;
-                    margin-right: 10px;
-
-                    svg path {
-                        transition: fill 300ms ease-in-out;
-                    }
-    
-                    &:hover svg path {
-                        fill: $grayishBlue;
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .login {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .social {
+      margin-top: 20px;
+
+      div {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        a {
+          display: inline-block;
+          margin-left: 10px;
+          margin-right: 10px;
+
+          svg path {
+            transition: fill 300ms ease-in-out;
+          }
+
+          &:hover svg path {
+            fill: $grayishBlue;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,351 +1,353 @@
 .hero {
-    position: relative;
+  position: relative;
 
-    &__video {
+  &__video {
+    &__content {
+      max-width: 100%;
+      position: relative;
 
-        &__content {
-            max-width: 100%;
-            position: relative;
-    
-            .btn_play_stop {
-                position: absolute;
-                display: block;
-                background-color: none;
-            }
-    
-            h1 {
-                position: absolute;
-                display: block;
-                bottom: 20%;
-                white-space: normal;
-                overflow: hidden;
-            }
-    
-            video {
-                width: 100%;
-                position: relative;
-                z-index: -1;
-            }
-        
-            .login {
-                position: absolute;
-                display: block;
-                top: 20px;
-                right: 160px;
-            }
-        
-            .signup {
-                position: absolute;
-                display: block;
-                top: 20px;
-                right: 30px;
-            }
-    
-            .joinus_today {
-                position: absolute;
-                display: block;
-                bottom: 10%;
-            }
-        }
+      .btn_play_stop {
+        position: absolute;
+        display: block;
+        background-color: none;
+      }
+
+      h1 {
+        position: absolute;
+        display: block;
+        bottom: 20%;
+        white-space: normal;
+        overflow: hidden;
+      }
+
+      video {
+        width: 100%;
+        position: relative;
+        z-index: -1;
+      }
+
+      .login {
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 160px;
+      }
+
+      .signup {
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 30px;
+      }
+
+      .joinus_today {
+        position: absolute;
+        display: block;
+        bottom: 10%;
+      }
     }
+  }
 
-    &__discover {
+  &__discover {
+    &__content {
+      max-width: 100%;
+      position: relative;
+      height: 600px;
 
-        &__content {
-            max-width: 100%;
-            position: relative;
-            height: 600px;
+      .title {
+        position: absolute;
+        width: 50%;
+        top: 5rem;
+        left: 1.5rem;
 
-            .title {
-                position: absolute;
-                width: 50%;
-                top: 5rem;
-                left: 1.5rem;
-                
-                h1 {
-                    font-style: bold;
-                    font-weight: 600;
-                    color: $grayishBlue;
-                }
-            }
-
-            .step1 {
-                position: absolute;
-                top: 10rem;
-                left: 1.5rem;
-                width: 50%;
-                h2 {
-                    font-style: bold;
-                    font-weight: 600;
-                    padding-right: 2rem;
-                }
-
-                p {
-                    color: $grayishBlue;
-                    padding-right: 2rem;
-                }
-
-                .learn_more {
-                    margin-bottom: 30px;
-                    padding-right: 2rem;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-
-            .step2 {
-                position: absolute;
-                top: 10rem;
-                right: 1.5rem;
-                width: 50%;
-                h2 {
-                    font-style: bold;
-                    font-weight: 600;
-                    padding-left: 2rem;
-                }
-
-                p {
-                    color: $grayishBlue;
-                    padding-left: 2rem;
-                }
-
-                .learn_more {
-                    margin-bottom: 30px;
-                    padding-left: 2rem;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-            }
+        h1 {
+          font-style: bold;
+          font-weight: 600;
+          color: $grayishPink;
         }
-    }
+      }
 
-    &__desc1 {
-
-        &__content {
-            max-width: 100%;
-            position: relative;
-            height: 600px;
-
-            // img {
-            //     position: absolute;
-            //     width: 640px;
-            //     height: 400px;
-            //     min-width: 320px;
-            //     min-height: 200;
-            //     left: 3rem;
-            // }
-            
-            .image_container {
-                width: 50%;
-                position: absolute;
-                left: 3rem;
-                padding-right: 5rem;
-
-                .image {
-                    width: 100%;
-                    height: 440px;
-                    background-image: url('/images/image-confetti.jpg');
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center center;
-                }
-            }
-
-            .image_desc {
-                width: 50%;
-                position: absolute;
-                right: 1.5rem;
-
-                h2 {
-                    font-style: bold;
-                    font-weight: 600;
-                    padding-left: 2rem;
-                }
-
-                p {
-                    color: $grayishBlue;
-                    padding-left: 2rem;
-                }
-
-                .learn_more {
-                    margin-bottom: 30px;
-                    padding-left: 2rem;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-            }
+      .step1 {
+        position: absolute;
+        top: 10rem;
+        left: 1.5rem;
+        width: 50%;
+        h2 {
+          font-style: bold;
+          font-weight: 600;
+          padding-right: 2rem;
         }
-    }
 
-    &__desc2 {
-
-        &__content {
-            max-width: 100%;
-            position: relative;
-            height: 600px;
-
-            // img {
-            //     position: absolute;
-            //     width: 640px;
-            //     height: 400px;
-            //     min-width: 320px;
-            //     min-height: 200;
-            //     left: 3rem;
-            // }
-            
-            .image_container {
-                width: 50%;
-                position: absolute;
-                right: 3rem;
-                padding-left: 5rem;
-
-                .image {
-                    width: 100%;
-                    height: 440px;
-                    background-image: url('/images/image-confetti.jpg');
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center center;
-                }
-            }
-
-            .image_desc {
-                width: 50%;
-                position: absolute;
-                left: 1.5rem;
-
-                h2 {
-                    font-style: bold;
-                    font-weight: 600;
-                    padding-right: 2rem;
-                }
-
-                p {
-                    color: $grayishBlue;
-                    padding-right: 2rem;
-                }
-
-                .learn_more {
-                    margin-bottom: 30px;
-                    padding-right: 2rem;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-            }
+        p {
+          color: $grayishPink;
+          padding-right: 2rem;
         }
-    }
 
-    &__partners {
-        
-        &__content {
-            max-width: 100%;
-            position: relative;
-            height: 738px;
-            
-            .title {
-                width: 100%;
-                text-align: center;
-                
-                h1 {
-                    font-style: bold;
-                    font-weight: 600;
-                }
+        .learn_more {
+          margin-bottom: 30px;
+          padding-right: 2rem;
 
-                p {
-                    font-style: bold;
-                    font-weight: 600;                
-                }
-            }
-
-            .image_container1 {
-                width: 100%;
-                position: absolute;
-                top: 40%;
-                
-                .partner_image {
-                width: 173px;
-                height: 76px;
-                background-image: linear-gradient(to right, $lightGray 0%, $lightGray 100%);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center center;
-                margin: 10px 5px;
-                position: relative;
-
-                    &::before {
-                        content: "Partner";
-                        font-size: 2rem;
-                        color: $black;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                }
-            }
-
-            .image_container2 {
-                width: 100%;
-                position: absolute;
-                top: 55%;
-                
-                .partner_image {
-                width: 173px;
-                height: 76px;
-                background-image: linear-gradient(to right, $lightGray 0%, $lightGray 100%);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center center;
-                margin: 10px 5px;
-                position: relative;
-
-                &::before {
-                        content: "Partner";
-                        font-size: 2rem;
-                        color: $black;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                }
-            }
-
-            .join_us {
-                position: absolute;
-                display: block;
-                bottom: 12%;
-            }
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
-    }
+      }
 
-    &__contact_us {
-
-        &__content {
-            max-width: 100%;
-            position: relative;
-            height: 340px;
-            background-color: $brighterBlack;
-
-            .title {
-                width: 100%;
-            }
-
-            .join_today {
-                margin-left: 10px;
-            }
-
-            .contact_us {
-                margin-left: 10px;
-            }
+      .step2 {
+        position: absolute;
+        top: 10rem;
+        right: 1.5rem;
+        width: 50%;
+        h2 {
+          font-style: bold;
+          font-weight: 600;
+          padding-left: 2rem;
         }
+
+        p {
+          color: $grayishPink;
+          padding-left: 2rem;
+        }
+
+        .learn_more {
+          margin-bottom: 30px;
+          padding-left: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
+  }
+
+  &__desc1 {
+    &__content {
+      max-width: 100%;
+      position: relative;
+      height: 600px;
+
+      // img {
+      //     position: absolute;
+      //     width: 640px;
+      //     height: 400px;
+      //     min-width: 320px;
+      //     min-height: 200;
+      //     left: 3rem;
+      // }
+
+      .image_container {
+        width: 50%;
+        position: absolute;
+        left: 3rem;
+        padding-right: 5rem;
+
+        .image {
+          width: 100%;
+          height: 440px;
+          background-image: url("/images/image-confetti.jpg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+        }
+      }
+
+      .image_desc {
+        width: 50%;
+        position: absolute;
+        right: 1.5rem;
+
+        h2 {
+          font-style: bold;
+          font-weight: 600;
+          padding-left: 2rem;
+        }
+
+        p {
+          color: $grayishPink;
+          padding-left: 2rem;
+        }
+
+        .learn_more {
+          margin-bottom: 30px;
+          padding-left: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__desc2 {
+    &__content {
+      max-width: 100%;
+      position: relative;
+      height: 600px;
+
+      // img {
+      //     position: absolute;
+      //     width: 640px;
+      //     height: 400px;
+      //     min-width: 320px;
+      //     min-height: 200;
+      //     left: 3rem;
+      // }
+
+      .image_container {
+        width: 50%;
+        position: absolute;
+        right: 3rem;
+        padding-left: 5rem;
+
+        .image {
+          width: 100%;
+          height: 440px;
+          background-image: url("/images/image-confetti.jpg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+        }
+      }
+
+      .image_desc {
+        width: 50%;
+        position: absolute;
+        left: 1.5rem;
+
+        h2 {
+          font-style: bold;
+          font-weight: 600;
+          padding-right: 2rem;
+        }
+
+        p {
+          color: $grayishPink;
+          padding-right: 2rem;
+        }
+
+        .learn_more {
+          margin-bottom: 30px;
+          padding-right: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__partners {
+    &__content {
+      max-width: 100%;
+      position: relative;
+      height: 738px;
+
+      .title {
+        width: 100%;
+        text-align: center;
+
+        h1 {
+          font-style: bold;
+          font-weight: 600;
+        }
+
+        p {
+          font-style: bold;
+          font-weight: 600;
+        }
+      }
+
+      .image_container1 {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+
+        .partner_image {
+          width: 173px;
+          height: 76px;
+          background-image: linear-gradient(
+            to right,
+            $lightGray 0%,
+            $lightGray 100%
+          );
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          margin: 10px 5px;
+          position: relative;
+
+          &::before {
+            content: "Partner";
+            font-size: 2rem;
+            color: $black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+
+      .image_container2 {
+        width: 100%;
+        position: absolute;
+        top: 55%;
+
+        .partner_image {
+          width: 173px;
+          height: 76px;
+          background-image: linear-gradient(
+            to right,
+            $lightGray 0%,
+            $lightGray 100%
+          );
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          margin: 10px 5px;
+          position: relative;
+
+          &::before {
+            content: "Partner";
+            font-size: 2rem;
+            color: $black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+
+      .join_us {
+        position: absolute;
+        display: block;
+        bottom: 12%;
+      }
+    }
+  }
+
+  &__contact_us {
+    &__content {
+      max-width: 100%;
+      position: relative;
+      height: 340px;
+      background-color: $brighterBlack;
+
+      .title {
+        width: 100%;
+      }
+
+      .join_today {
+        margin-left: 10px;
+      }
+
+      .contact_us {
+        margin-left: 10px;
+      }
+    }
+  }
 }
